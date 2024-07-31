@@ -1,0 +1,196 @@
+/* App.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("image_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-family: ui-serif;
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #15ffe9;
+}
+
+.word-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:10px;
+  margin: 20px;
+}
+.word-description {
+  font-size: 20px;
+  color: #fb9500;
+  margin: 30px;
+  font-family:"Gupter", serif;
+}
+
+.guess-section{
+  margin:20px;
+  display:flex;
+}
+.letter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: bold;
+  color: navy;
+  background-color: #50b3f1;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.letter.visible {
+  opacity: 1;
+}
+
+.button-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.restart-button,
+.remove-button {
+  padding: 12px 20px;
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #08201e;
+  background-color: #c4e619;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.remove-button:disabled {
+  cursor: not-allowed;
+}
+
+.restart-button:hover,
+.remove-button:hover {
+  color: #091d2b; 
+  background-color:rgb(198, 124, 12);
+}
+
+.restart-button:focus,
+.remove-button:focus {
+  outline: none;
+}
+
+.letter-selection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0px 20px 30px;
+}
+
+.letter-button {
+  height:40px;
+  width:40px;
+  margin: 5px;
+  font-family: "Maname", serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #2196f3;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.letter-button.selected {
+  background-color: #1976d2;
+}
+
+.letter-button:disabled {
+  background-color: #ccc;
+  color:navy;
+  cursor: not-allowed;
+}
+
+.hints {
+  font-family:cursive;
+  font-size: 20px;
+  font-weight: bold;
+  color: #f7e228;
+  margin-bottom: 10px;
+}
+
+.hint-button {
+  padding: 5px 8px;
+  font-family:cursive;
+  font-size: 20px;
+  font-weight: bold;
+  color: #0b4945;
+  background-color: #c4e619;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.hint-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.hint-button:hover {
+  color:#191b12;
+  background-color: #fb8c00e6;
+}
+
+.hint-button:focus {
+  outline: none;
+}
+
+.message {
+  font-family:"Gupter", serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #00ffee;
+  text-align: center;
+  margin: 5px;
+}
+
+.guess-button {
+  padding: 12px 30px;
+  margin: 20px 20px 50px;
+  font-size: 18px;
+  font-weight: bold;
+  color:yellow;
+  background-color: forestgreen;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+ 
+.guess-button:disabled {
+  cursor: not-allowed;
+}
+
+.guess-button:hover {
+  color:#191b12;
+  background-color: #fb8c00e6;
+}
+/* 
+.guess-button:focus {
+  outline: none;
+} */
