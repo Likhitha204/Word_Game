@@ -42,7 +42,7 @@ const getRandomWord = () => {
   return sampleWords[randomPlace];
 };
 
-const GFGWordGame = () => {
+const WordGame = () => {
   const [wordData, setWordData] = useState(getRandomWord());
   const [msg, setMsg] = useState("");
   const [chosenLetters, setChosenLetters] = useState([]);
@@ -194,4 +194,4 @@ const GFGWordGame = () => {
   );
 };
 
-export default GFGWordGame;
+export default WordGame;
