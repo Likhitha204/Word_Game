@@ -111,9 +111,9 @@ const WordGame = () => {
 
   const guessFunction = () => {
     if (checkWordGuessedFunction()) {
-      setMsg("Congo Geek! You have guessed the word correctly!");
+      setMsg("Congratulations! You have guessed the word correctly!!");
     } else {
-      setMsg("You made a Wrong Guess Geek!. Try again!");
+      setMsg("You made a Wrong Guess. Try again!!");
       setDisplayWord(true);
     }
   };
